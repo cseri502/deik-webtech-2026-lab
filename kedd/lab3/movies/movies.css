@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+movies {
+    border: medium solid indigo;
+    box-shadow: 0.25em 0.25em 0.5em indigo;
+    display: block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 1em;
+    padding: 1em;
+}
+
+movie {
+    display: list-item;
+    list-style-type: disc;
+    margin: 0 2em;
+    padding: 0.5em;
+}
+
+title {
+    display: none;
+}
+
+title:lang(en), year, genre, rating, votes {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+title, year {
+    font-size: 1.2em;
+}
+
+year::before {
+    content: "(";
+}
+
+year::after {
+    content: "):";
+}
+
+genre, rating {
+    color: white;
+}
+
+rating, movie:hover::after {
+    border-radius: 0.25em;
+    padding: 0.25em;
+}
+
+genre {
+    background-color: blueviolet;
+    border-radius: 5em;
+    font-size: 0.9em;
+    margin-right: 0.25em;
+    padding: 0.25em 0.6em;
+    text-align: center;
+}
+
+rating {
+    background-color: hotpink;
+    font-weight: bold;
+}
+
+rating::after {
+    content: "/10";
+}
+
+votes::before {
+    content: " from ";
+}
+
+votes::after {
+    content: " ratings";
+}
+
+movie:hover::after {
+    background-color: gold;
+    color: blueviolet;
+    content: "https://www.imdb.com/title/tt" attr(id);
+    display: inline-block;
+    font-family: monospace;
+    font-size: large;
+    margin-left: 1em;
+}
+
+/*movie:is([mpa-rating=R], [mpa-rating=NC-17]) > :is(title, year) {
+    color: red;
+    font-weight: bold;
+}*/
+
+movie[mpa-rating="R"] > title,
+movie[mpa-rating="R"] > year,
+movie[mpa-rating="NC-17"] > title,
+movie[mpa-rating="NC-17"] > year {
+    color: red;
+    font-weight: bold;
+}
+
+movie:hover {
+    background-color: lavender;
+}
+
+movie {
+    transition: background-color 0.4s ease;
+}
