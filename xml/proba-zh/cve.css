@@ -1,0 +1,71 @@
+cve-table {
+  display: table;
+  width: 96%;
+  margin: 2em auto;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+cve {
+  display: table-row;
+}
+
+cve-id,
+description,
+weaknesses,
+cvss-score {
+  display: table-cell;
+  padding: 12px 14px;
+  border: 1px solid #b8c0c8;
+  vertical-align: top;
+}
+
+cve-id {
+  width: 13%;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+description {
+  width: 42%;
+  line-height: 1.45;
+}
+
+weaknesses {
+  width: 32%;
+}
+
+cwe {
+  display: block;
+  margin-bottom: 5px;
+}
+
+cvss-score {
+  width: 13%;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* A referencia URL nem jelenik meg. */
+reference-url {
+  display: none;
+}
+
+/* Súlyosság szerinti háttérszínek. */
+cve[severity="low"] {
+  background-color: #d9f2d9;
+}
+
+cve[severity="medium"] {
+  background-color: #fff3bf;
+}
+
+cve[severity="high"] {
+  background-color: #ffd8a8;
+}
+
+cve[severity="critical"] {
+  background-color: #ffc9c9;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="cve.css"?>
+<cve-table>
+  <cve severity="critical">
+    <cve-id>CVE-2026-45495</cve-id>
+    <description>Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability</description>
+    <weaknesses>
+      <cwe>CWE-35: Path Traversal: '.../...//'</cwe>
+      <cwe>CWE-20: Improper Input Validation</cwe>
+      <cwe>CWE-94: Improper Control of Generation of Code ('Code Injection')</cwe>
+      <cwe>CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer</cwe>
+    </weaknesses>
+    <cvss-score>9.8</cvss-score>
+    <reference-url>https://www.cvefind.com/en/cve/CVE-2026-45495.html</reference-url>
+  </cve>
+
+  <cve severity="medium">
+    <cve-id>CVE-2019-11588</cve-id>
+    <description>The ViewSystemInfo class doGarbageCollection method in Jira before version 7.13.6, from version 8.0.0 before version 8.2.3, and from version 8.3.0 before version 8.3.2 allows remote attackers to trigger garbage collection via a Cross-site request forgery (CSRF) vulnerability.</description>
+    <weaknesses>
+      <cwe>CWE-352: Cross-Site Request Forgery (CSRF)</cwe>
+    </weaknesses>
+    <cvss-score>4.3</cvss-score>
+    <reference-url>https://www.cvefind.com/en/cve/CVE-2019-11588.html</reference-url>
+  </cve>
+
+  <cve severity="medium">
+    <cve-id>CVE-2021-26079</cve-id>
+    <description>The CardLayoutConfigTable component in Jira Server and Jira Data Center before version 8.5.15, and from version 8.6.0 before version 8.13.7, and from version 8.14.0 before 8.17.0 allows remote attackers to inject arbitrary HTML or JavaScript via a cross site scripting (XSS) vulnerability.</description>
+    <weaknesses>
+      <cwe>CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</cwe>
+    </weaknesses>
+    <cvss-score>6.1</cvss-score>
+    <reference-url>https://www.cvefind.com/en/cve/CVE-2021-26079.html</reference-url>
+  </cve>
+
+  <cve severity="low">
+    <cve-id>CVE-2026-9991</cve-id>
+    <description>Inappropriate implementation in Media in Google Chrome on Windows prior to 148.0.7778.216 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)</description>
+    <weaknesses>
+      <cwe>CWE-200: Exposure of Sensitive Information to an Unauthorized Actor</cwe>
+    </weaknesses>
+    <cvss-score>3.1</cvss-score>
+    <reference-url>https://www.cvefind.com/en/cve/CVE-2026-9991.html</reference-url>
+  </cve>
+</cve-table>
