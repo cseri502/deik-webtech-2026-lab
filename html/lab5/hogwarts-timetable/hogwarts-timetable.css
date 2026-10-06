@@ -1,0 +1,49 @@
+body {
+    background-color: floralwhite;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+table.timetable {
+    border-collapse: collapse;
+    box-shadow: 0 0 0.25rem black;
+    margin: 2rem auto;
+}
+
+table.timetable :is(td, th) {
+    border: thin solid black;
+    padding: 1rem;
+}
+
+table.timetable > thead th {
+    background-color: burlywood;
+    font-size: 125%;
+    font-variant: small-caps;
+    letter-spacing: 0.05rem;
+}
+
+/* table.timetable > tbody :is(td, th) */
+table.timetable > tbody td,
+table.timetable > tbody th {
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.timetable td[colspan] {
+    background-color: cornsilk;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table.timetable > tbody td:not([colspan]) {
+    transition-property: background-color, outline, transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+table.timetable > tbody td:not([colspan]):hover {
+    background-color: moccasin;
+    outline: 4px solid goldenrod;
+    outline-offset: -4px;
+    transform: scale(1.05);
+}

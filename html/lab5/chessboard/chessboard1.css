@@ -1,0 +1,9 @@
+table.chessboard {
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+table.chessboard th {
+    font-family: sans-serif;
+    font-weight: normal;
+}
