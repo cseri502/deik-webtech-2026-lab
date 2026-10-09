@@ -1,0 +1,63 @@
+firstNames {
+    display: table;
+    width: 95%;
+    margin: 2em auto;
+    border-spacing: 0 0.6em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+}
+
+firstName {
+    display: table-row;
+}
+
+name,
+rating,
+namesake,
+nameDays {
+    display: table-cell;
+    vertical-align: top;
+    padding: 1em 1.2em;
+    border-top: thin solid #cfd8dc;
+    border-bottom: thin solid #cfd8dc;
+}
+
+name {
+    border-left: thin solid #cfd8dc;
+    border-radius: 0.5em 0 0 0.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 7em;
+}
+
+nameDays {
+    border-right: thin solid #cfd8dc;
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+rating::after {
+    content: "%";
+}
+
+nameDay {
+    display: block;
+    margin-bottom: 0.4em;
+    line-height: 1.4;
+}
+
+nameDay::before {
+    content: attr(country) ": ";
+    font-weight: bold;
+}
+
+firstName[gender="feminine"] {
+    background-color: #fde7f3;
+}
+
+firstName[gender="masculine"] {
+    background-color: #e3f2fd;
+}
+
+firstName[gender="unisex"] {
+    background-color: #e8f5e9;
+}
