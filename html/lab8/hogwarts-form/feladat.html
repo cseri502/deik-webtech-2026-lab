@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>feladat</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="feladat">Feladat</h1>
+<p>Készíts egy HTML dokumentumot és egy CSS stíluslapot az alábbi
+roxforti regisztrációs űrlap megjelenítéséhez:</p>
+<p><img src="hogwarts-form_hu1.png" /></p>
+<p><img src="hogwarts-form_hu2.png" /></p>
+<p>A <em>Küldés</em> gombra való kattintáskor az űrlap adatokat a <a
+href="https://webhook.site/">Webhook.site</a> webhelyre kell küldeni egy
+<code>POST</code> kérésben.</p>
+<p>A CSS stíluslaphoz szükséges a <a
+href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"><code>:has()</code></a>
+pszeudo-osztály, mely csak újabb böngészőkben áll rendelkezésre.</p>
+<p>A címsor megjelenítéséhez használd a <a
+href="https://fonts.google.com/specimen/Henny+Penny">Henny Penny</a>
+betűtípust.</p>
+<p>Folyószöveg megjelenítéséhez használd az <a
+href="https://fonts.google.com/specimen/EB+Garamond">EB Garamond</a>
+betűtípust.</p>
+<h2 id="további-teendők">További teendők</h2>
+<ol type="1">
+<li><p>Módosítsd úgy az űrlapot, hogy a ház kiválasztásakor az oldal
+háttérszíne változzon a ház elsődleges színére. A házak elsődleges
+színei <a
+href="https://www.wizardingworld.com/writing-by-jk-rowling/colours">innen</a>
+véve:</p>
+<ul>
+<li>Griffendél: piros,</li>
+<li>Hugrabug: sárga,</li>
+<li>Hollóhát: kék,</li>
+<li>Mardekár: zöld.</li>
+</ul></li>
+<li><p>Adj hozzá az űrlaphoz egy vezérlőt a varázspálcák számának
+megadásához, mely egy nemnegatív egész szám (<a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number"><code>&lt;input type="number"&gt;</code></a>).</p></li>
+<li><p>Adj hozzá az űrlaphoz egy vezérlőt egy PNG vagy JPEG formátumú
+fotó feltöltéséhez (<a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file"><code>&lt;input type="file"&gt;</code></a>).</p></li>
+<li><p>Add hozzá az űrlaphoz a <em>Meg akarod-e látogatni a Mágiaügyi
+Minisztériumot?</em> kérdést, melyre az <em>Igen</em> és <em>Nem</em>
+válaszlehetőségek közüli választás rádiógombokkal történjen (<a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"><code>&lt;input type="radio"&gt;</code></a>).</p></li>
+<li><p>Alakítsd át az űrlapot úgy, hogy a ház kiválasztása történjen
+rádiógombok egy csoportjának segítségével (<a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio"><code>&lt;input type="radio"&gt;</code></a>).
+A válaszlehetőségek egymás alatt jelenjenek meg.</p></li>
+<li><p>Adj hozzá az űrlaphoz egy jelszó mezőt (<a
+href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password"><code>&lt;input type="password"&gt;</code></a>).
+A <code>pattern</code> attribútum segítségével fejezd ki az alábbi
+jelszó követelményeket:</p>
+<ul>
+<li>A jelszó legalább hat karaktert kell, hogy tartalmazzon.</li>
+<li>Kizárólag az angol ábécé betűi és a decimális számjegy karakterek
+megengedettek.</li>
+<li>A jelszó betű és számjegy karaktert is kell, hogy tartalmazzon.</li>
+</ul></li>
+<li><p>Helyezz el egy jelölőnégyzetet az űrlapon a ház választása elé a
+következő címkével: <em>A Teszlek Süvegre bízom a ház választását</em>.
+A jelölőnégyzet bekattintásakor kerüljön letiltásra a ház kiválasztására
+szolgáló vezérlő. Ehhez JavaScript használata szükséges, lásd a <a
+href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/disabled"><code>disabled</code></a>
+tulajdonságot.</p></li>
+<li><p>Adj hozzá az űrlaphoz egy további jelszómezőt a jelszó
+megismétléséhez. Ahhoz, hogy az űrlap elküldhető legyen, a két jelszónak
+meg kell egyezni. Ehhez JavaScript használata szükséges.</p></li>
+<li><p>Ha a születési dátum szerint az életkor 11 év alatti, akkor a
+<em>Küldés</em> gombra való kattintás eredményezzen hibát a következő
+üzenettel: <em>Túl fiatal vagy még Roxforthoz, az alsó korhatár 11
+év</em>. Ehhez JavaScript használata szükséges.</p></li>
+</ol>
+<h2 id="ajánlott-olvasvány">Ajánlott olvasvány</h2>
+<ul>
+<li><a
+href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">Client-side
+form validation (MDN)</a></li>
+<li><a href="https://javascript.info/date">The Modern JavaScript
+Tutorial – Date and time</a></li>
+</ul>
+</body>
+</html>

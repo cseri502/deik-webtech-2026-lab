@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevásárlólista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Bevásárlólista</h1>
+
+        <form id="shoppingForm">
+            <input
+                type="text"
+                id="productInput"
+                placeholder="Pl. tej"
+            >
+            <button type="submit">Hozzáadás</button>
+        </form>
+
+        <p>
+            Hátralévő termékek:
+            <strong id="counter">0</strong>
+        </p>
+
+        <ul id="shoppingList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
