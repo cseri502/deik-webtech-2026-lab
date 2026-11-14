@@ -1,0 +1,76 @@
+* {
+    display: block;
+}
+
+maintainer > *, import {
+    display: inline-block;
+}
+
+packages {
+    font-family: sans-serif;
+    line-height: 1.5;
+    padding: 1em;
+}
+
+package {
+    border: medium solid indigo;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+package[needs-compilation=yes] {
+    background-color: aliceblue;
+}
+
+package[needs-compilation=no] {
+    background-color: mistyrose;
+}
+
+package > name {
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+date::before, maintainer::before, imports::before {
+    font-weight: bold;
+}
+
+date::before {
+    content: "Published: ";
+}
+
+maintainer::before {
+    content: "Maintainer: "
+}
+
+email {
+    font-family: monospace;
+}
+
+email::before {
+    content: "<";
+}
+
+email::after {
+    content: ">";
+}
+
+imports::before {
+    content: "Imports: "
+}
+
+import {
+    background-color: forestgreen;
+    border-radius: 9999px;
+    color: white;
+    font-size: small;
+    padding: 0.1em 0.5em;
+}
+
+package:hover {
+    box-shadow: 0 0 0.5em indigo;
+    transform: scale(1.01) rotate(0.5deg);
+    transition: all 0.3s ease-in-out;
+}

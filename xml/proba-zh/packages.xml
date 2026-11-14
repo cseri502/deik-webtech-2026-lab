@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="packages.css" type="text/css"?>
+<packages>
+    <package needs-compilation="yes">
+        <name>dplyr</name>
+        <date>2026-04-03</date>
+        <maintainer>
+            <name>Hadley Wickham</name>
+            <email>hadley@posit.co</email>
+        </maintainer>
+        <imports>
+            <import>cli</import>
+            <import>generics</import>
+            <import>glue</import>
+            <import>lifecycle</import>
+            <import>magrittr</import>
+        </imports>
+    </package>
+    <package needs-compilation="yes">
+        <name>data.table</name>
+        <date>2026-08-24</date>
+        <maintainer>
+            <name>Tyson Barrett</name>
+            <email>t.barrett88@gmail.com</email>
+        </maintainer>
+        <imports>
+            <import>methods</import>
+        </imports>
+    </package>
+    <package needs-compilation="yes">
+        <name>e1071</name>
+        <date>2025-12-18</date>
+        <maintainer>
+            <name>David Meyer</name>
+            <email>David.Meyer@r-project.org</email>
+        </maintainer>
+        <imports>
+            <import>graphics</import>
+            <import>grDevices</import>
+            <import>class</import>
+            <import>stats</import>
+            <import>methods</import>
+            <import>utils</import>
+            <import>proxy</import>
+        </imports>
+    </package>
+    <package needs-compilation="no">
+        <name>stringr</name>
+        <date>2025-11-04</date>
+        <maintainer>
+            <name>Hadley Wickham</name>
+            <email>hadley@posit.co</email>
+        </maintainer>
+        <imports>
+            <import>cli</import>
+            <import>glue</import>
+            <import>lifecycle</import>
+            <import>magrittr</import>
+            <import>rlang</import>
+            <import>stringi</import>
+            <import>vctrs</import>
+        </imports>
+    </package>
+</packages>
